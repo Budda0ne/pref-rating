@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Ленинград. Стоимости игр для 4 игроков.</title>
+
+	<style type="text/css">
+		table.results {
+			border-collapse: collapse;
+		}
+		table.results th {
+			font-weight: normal;
+			color: #878069;
+			background-color: #F8F4E7;
+			border: 1px solid #DDDDDD;
+			padding: 5px;
+		}
+		/*
+				table.competitionsList td {
+					padding: 5px;
+					border: 1px solid #DDDDDD;
+				}
+		*/
+		table.results td {
+			padding: 0 5px;
+			border: 1px solid #DDDDDD;
+			text-align: right;
+		}
+		table.results td.center {
+			text-align: center;
+		}
+		table.results td.left {
+			text-align: left;
+		}
+
+		table.results tr.odd {
+			background-color: #F7F6EB;
+		}
+		table.results tr.even {
+		}
+
+		table.results td.positivePoints {
+			color: #2F8415;
+		}
+		table.results td.negativePoints {
+			color: #FF0000;
+		}
+
+		table.results td.leftSeparate, table.results th.leftSeparate {
+			border-left: 3px solid #DDDDDD;
+		}
+		table.results td.rightSeparate, table.results th.rightSeparate {
+			border-right: 3px solid #DDDDDD;
+		}
+		table.results td.topSeparate, table.results th.topSeparate {
+			border-top: 3px solid #DDDDDD;
+		}
+
+		table.results tr.summary td {
+			border-top: 2px solid #DDDDDD;
+		}
+
+		h2 {
+			color: #878069;
+		}
+		h3 {
+			color: #878069;
+			margin-bottom: 5px;
+			margin-top: 20px;
+		}
+		h4 {
+			color: #878069;
+			margin-bottom: 5px;
+		}
+
+		.attent {
+			color: #FF0000;
+		}
+	</style>
+
+</head>
+<body>
+
+<a href="http://sergeyev.ru/pref/">Назад к рейтингу игроков</a>
+
+<h2>Стоимости игр для четырех игроков, Ленинград</h2>
+
+<div id="results-container">
+	<h3>Игры</h3>
+
+	<table class="results">
+		<tbody>
+			<tr><th>Игра</th><th>Висты играющего</th></tr>
+			<tr><td>6 без 2</td><td>&minus; 108</td></tr>
+			<tr><td>6 без 3 без вистов</td><td>&minus; 90</td></tr>
+			<tr><td>6 без 1</td><td>&minus; 62</td></tr>
+			<tr><td>6 как 6</td><td>14</td></tr>
+			<tr><td class="topSeparate">7 без 3</td><td class="topSeparate">&minus; 300</td></tr>
+			<tr><td>7 без 2</td><td>&minus; 208</td></tr>
+			<tr><td>7 без 3 без вистов</td><td>&minus; 180</td></tr>
+			<tr><td>7 без 1</td><td>&minus; 116</td></tr>
+			<tr><td>7 как 7</td><td>36</td></tr>
+			<tr><td>7 как 8</td><td>44</td></tr>
+			<tr><td class="topSeparate">8 без 1</td><td class="topSeparate">&minus; 162</td></tr>
+			<tr><td>8 как 8</td><td>66</td></tr>
+			<tr><td>8 как 9</td><td>78</td></tr>
+			<tr><td>8 как два паса</td><td>90</td></tr>
+			<tr><td class="topSeparate">9 без 1</td><td class="topSeparate">&minus; 200</td></tr>
+			<tr><td>9 как 9</td><td>108</td></tr>
+			<tr><td>9 как два паса</td><td>120</td></tr>
+			<tr><td class="topSeparate">10 как 10</td><td class="topSeparate">150</td></tr>
+		</tbody>
+	</table>
+
+	<h3>Распасы</h3>
+	<table class="results">
+		<tbody>
+			<tr><th>Игра</th><th>Первые распасы (по 2)</th><th>Вторые распасы (по 4)</th><th>Третьи распасы (по 6)</th></tr>
+			<tr><td>1 чистый</td><td>80</td><td>160</td><td>240</td></tr>
+			<tr><td>2 чистых</td><td>70</td><td>140</td><td>210</td></tr>
+			<tr><td>Чистый сдатчик, нет чистых</td><td>50</td><td>100</td><td>150</td></tr>
+			<tr><td>Чистый сдатчик, 1 чистый</td><td>40</td><td>80</td><td>120</td></tr>
+			<tr><td>Чистый сдатчик, 2 чистых</td><td>30</td><td>60</td><td>90</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>1 взятка, нет чистых</td><td>30</td><td>60</td><td>90</td></tr>
+			<tr><td>1 взятка, 1 чистый</td><td>20</td><td>40</td><td>60</td></tr>
+			<tr><td>Сдатчик 1 взятка, 2 чистых</td><td>10</td><td>20</td><td>30</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>2 взятки, нет чистых</td><td>10</td><td>20</td><td>30</td></tr>
+			<tr><td>2 взятки, 1 чистый</td><td>0</td><td>0</td><td>0</td></tr>
+			<tr><td>Сдатчик 2 взятки, 2 чистых</td><td>&minus; 10</td><td>&minus; 20</td><td>&minus; 30</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>3 взятки, нет чистых</td><td>&minus; 10</td><td>&minus; 20</td><td>&minus; 30</td></tr>
+			<tr><td>3 взятки, 1 чистый</td><td>&minus; 20</td><td>&minus; 40</td><td>&minus; 60</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>4 взятки, нет чистых</td><td>&minus; 30</td><td>&minus; 60</td><td>&minus; 90</td></tr>
+			<tr><td>4 взятки, 1 чистый</td><td>&minus; 40</td><td>&minus; 80</td><td>&minus; 120</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>5 взяток, нет чистых</td><td>&minus; 50</td><td>&minus; 100</td><td>&minus; 150</td></tr>
+			<tr><td>5 взяток, 1 чистый</td><td>&minus; 60</td><td>&minus; 120</td><td>&minus; 180</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>6 взяток, нет чистых</td><td>&minus; 70</td><td>&minus; 140</td><td>&minus; 210</td></tr>
+			<tr><td>6 взяток, 1 чистый</td><td>&minus; 80</td><td>&minus; 160</td><td>&minus; 240</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>7 взяток, нет чистых</td><td>&minus; 90</td><td>&minus; 180</td><td>&minus; 270</td></tr>
+			<tr><td>7 взяток, 1 чистый</td><td>&minus; 100</td><td>&minus; 200</td><td>&minus; 300</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>8 взяток, нет чистых</td><td>&minus; 110</td><td>&minus; 220</td><td>&minus; 330</td></tr>
+			<tr><td>8 взяток, 1 чистый</td><td>&minus; 120</td><td>&minus; 240</td><td>&minus; 360</td></tr>
+			<tr><td>8 взяток, 2 чистых</td><td>&minus; 130</td><td>&minus; 260</td><td>&minus; 390</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>9 взяток, 1 чистый</td><td>&minus; 140</td><td>&minus; 280</td><td>&minus; 420</td></tr>
+			<tr><td>9 взяток, 2 чистых</td><td>&minus; 150</td><td>&minus; 300</td><td>&minus; 450</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td><td class="topSeparate"><td class="topSeparate"></tr>
+			<tr><td>10 взяток, 2 чистых</td><td>&minus; 170</td><td>&minus; 340</td><td>&minus; 510</td></tr>
+		</tbody>
+	</table>
+
+	<h3>Шпаргалки при выборе игры или распасов</h3>
+
+	<h4>Первые распасы</h4>
+	<table class="results">
+		<tbody>
+			<tr><th>Игра</th><th>Висты играющего</th></tr>
+			<tr><td>Распас 5, без чистых</td><td>&minus; 50</td></tr>
+			<tr><td>Распас 5, 1 чистый</td><td>&minus; 60</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>6 без 1</strong></td><td>&minus; 62</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 6, без чистых</td><td>&minus; 70</td></tr>
+			<tr><td>Распас 6, 1 чистый</td><td>&minus; 80</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>6 без 3 без вистов</strong></td><td>&minus; 90</td></tr>
+			<tr><td>Распас 7, без чистых</td><td>&minus; 90</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 7, 1 чистый</td><td>&minus; 100</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>6 без 2</strong></td><td>&minus; 108</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 8, без чистых</td><td>&minus; 110</td></tr>
+			<tr><td>Распас 8, 1 чистый</td><td>&minus; 120</td></tr>
+		</tbody>
+	</table>
+
+
+	<h4>Вторые распасы</h4>
+	<table class="results">
+		<tbody>
+			<tr><th>Игра</th><th>Висты играющего</th></tr>
+			<tr><td>Распас 5, без чистых</td><td>&minus; 100</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 1</strong></td><td>&minus; 116</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 5, 1 чистый</td><td>&minus; 120</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 6, без чистых</td><td>&minus; 140</td></tr>
+			<tr><td>Распас 6, 1 чистый</td><td>&minus; 160</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 3 без вистов</strong></td><td>&minus; 180</td></tr>
+			<tr><td>Распас 7, без чистых</td><td>&minus; 180</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 7, 1 чистый</td><td>&minus; 200</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 2</strong></td><td>&minus; 208</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 8, без чистых</td><td>&minus; 220</td></tr>
+			<tr><td>Распас 8, 1 чистый</td><td>&minus; 240</td></tr>
+		</tbody>
+	</table>
+
+	<h4>Третьи распасы</h4>
+	<table class="results">
+		<tbody>
+			<tr><th>Игра</th><th>Висты играющего</th></tr>
+			<tr><td>Распас 4, без чистых</td><td>&minus; 90</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 1</strong></td><td>&minus; 116</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 4, 1 чистый</td><td>&minus; 120</td></tr>
+			<tr><td>Распас 5, без чистых</td><td>&minus; 150</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 3 без вистов</strong></td><td>&minus; 180</td></tr>
+			<tr><td>Распас 5, 1 чистый</td><td>&minus; 180</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 2</strong></td><td>&minus; 208</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 6, без чистых</td><td>&minus; 210</td></tr>
+			<tr><td>Распас 6, 1 чистый</td><td>&minus; 240</td></tr>
+			<tr><td>Распас 7, без чистых</td><td>&minus; 270</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td><strong>7 без 3</strong></td><td>&minus; 300</td></tr>
+			<tr><td>Распас 7, 1 чистый</td><td>&minus; 300</td></tr>
+			<tr><td class="topSeparate"></td><td class="topSeparate"></td></tr>
+			<tr><td>Распас 8, без чистых</td><td>&minus; 330</td></tr>
+			<tr><td>Распас 8, 1 чистый</td><td>&minus; 360</td></tr>
+		</tbody>
+	</table>
+
+
+</div>
+
+</body>
+</html>
