@@ -102,7 +102,7 @@
 
 
 <script type="text/javascript">
-	var PLAYERS = { BEZUS: 'Bezus', POPOV: 'Popov', SHAMAEV: 'Shamaev', SERGEEV: 'Sergeev', FEDOSEEV: 'Fedoseev', VELIKANOVA: 'Velikanova', PECHKUROVA: 'Pechkurova', ARTEM_POPOV: 'ArtemPopov', KOPENKOV: 'Kopenkov', VASIN: 'Vasin', ISAEVA: 'Isaeva', FEDOSEEVA: 'Fedoseeva', PECHKUROV: 'Pechkurov' };
+	var PLAYERS = { BEZUS: 'Bezus', POPOV: 'Popov', SHAMAEV: 'Shamaev', SERGEEV: 'Sergeev', FEDOSEEV: 'Fedoseev', VELIKANOVA: 'Velikanova', PECHKUROVA: 'Pechkurova', ARTEM_POPOV: 'ArtemPopov', KOPENKOV: 'Kopenkov', VASIN: 'Vasin', ISAEVA: 'Isaeva', FEDOSEEVA: 'Fedoseeva', PECHKUROV: 'Pechkurov', MUNTYAN: 'Muntyan' };
 
 	// todo: think whether ids are needed
 	var players = [
@@ -119,6 +119,7 @@
 		, { id: 11, name: 'Исаева&nbsp;Елена&nbsp;Юрьевна', shortName: 'Е. И.', mnemonic: PLAYERS.ISAEVA }
 		, { id: 12, name: 'Федосеева&nbsp;Ирина&nbsp;Николаевна', shortName: 'И. Ф.', mnemonic: PLAYERS.FEDOSEEVA }
 		, { id: 13, name: 'Печкуров&nbsp;Дмитрий&nbsp;Владимирович', shortName: 'Д. В. П.', mnemonic: PLAYERS.PECHKUROV }
+		, { id: 13, name: 'Мунтян&nbsp;Глеб&nbsp;Юрьевич', shortName: 'Г. М.', mnemonic: PLAYERS.MUNTYAN }
 	];
 
 	// js object (kind of JSON) in data
@@ -785,8 +786,30 @@
 			, results: [
 				  { player: PLAYERS.PECHKUROVA, whists: 377 }
 				, { player: PLAYERS.KOPENKOV, whists: 29 }
-				, { player: PLAYERS.POPOV, whists: -119}
+				, { player: PLAYERS.POPOV, whists: -119 }
 				, { player: PLAYERS.ISAEVA, whists: -287 }
+			]
+		}
+		, {
+			  date: '18.12.2016'
+			, fileName: 'pref_2016_12_18_1.jpg'
+//			, comment: ''
+			, results: [
+				  { player: PLAYERS.POPOV, whists: 102 }
+				, { player: PLAYERS.ISAEVA, whists: 54 }
+				, { player: PLAYERS.PECHKUROVA, whists: -68 }
+				, { player: PLAYERS.KOPENKOV, whists: -88 }
+			]
+		}
+		, {
+			  date: '18.12.2016'
+			, fileName: 'pref_2016_12_18_2.jpg'
+//			, comment: ''
+			, results: [
+				  { player: PLAYERS.POPOV, whists: 194 }
+				, { player: PLAYERS.KOPENKOV, whists: 114 }
+				, { player: PLAYERS.MUNTYAN, whists: -152 }
+				, { player: PLAYERS.PECHKUROVA, whists: -156 }
 			]
 		}
 	];
